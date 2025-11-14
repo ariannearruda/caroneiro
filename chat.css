@@ -1,0 +1,223 @@
+/* === Reset e estrutura geral === */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .app-container {
+    width: 100%;
+    max-width: 400px;
+    height: 720px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* === Topo === */
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #dbe9f4;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .titulo {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #2c3e50;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .btn-voltar {
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-image: url('imagens/iconeFlecha.png'); /* ícone da flecha */
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  
+  .avatar-topo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url('imagens/avatarSofia.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* === Área de mensagens === */
+  .chat-area {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .mensagem {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .recebida {
+    flex-direction: row;
+  }
+  
+  .enviada {
+    flex-direction: row-reverse;
+  }
+  
+  .avatar-msg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .avatar-sofia {
+    background-image: url('imagens/Sofia.jpeg');
+  }
+  
+  .avatar-carlos {
+    background-image: url('imagens/AvatarPerfil.png');
+  }
+  
+  .texto-msg {
+    max-width: 65%;
+    padding: 10px 14px;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  /* === Campo de envio === */
+  .campo-envio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .campo-envio input {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .btn-enviar {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-image: url('imagens/iconeEnvio.png'); /* ícone de enviar */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+  .btn-imagem {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-image: url('imagens/iconeGaleria.png'); /* ícone de imagem */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+  /* === Navegação inferior === */
+  .nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ccc;
+  }
+  
+  .nav-icon {
+    width: 32px;
+    height: 32px;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .nav-icon.ativo {
+    opacity: 0.6;
+  }
+  
+  /* Ícones personalizados */
+  .home    { background-image: url('imagens/iconeHome.png'); }
+  .busca   { background-image: url('imagens/iconeBusca.jpeg'); }
+  .grupos  { background-image: url('imagens/iconeGrupos.png'); }
+  .perfil  { background-image: url('imagens/iconePerfil.png'); }
+  .chat    { background-image: url('imagens/iconeChat.png'); }
+
+  /* === Ajustes visuais === */
+.btn-voltar {
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-image: url('imagens/iconeFlecha.png');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  
+  .recebida .texto-msg {
+    background-color: #dbe9f4;
+    color: #2c3e50;
+  }
+  
+  .enviada .texto-msg {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .nav-bar {
+  display: flex;
+  justify-content: space-around; /* distribui os botões igualmente */
+  align-items: center;
+}
+
+.nav-icon {
+  width: 40px;       /* largura fixa */
+  height: 40px;      /* altura fixa */
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;    /* impede de encolher até sumir */
+}

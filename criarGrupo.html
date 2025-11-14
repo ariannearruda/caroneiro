@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caroneiro - Criar Grupo</title>
+  <link rel="stylesheet" href="criarGrupo.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="top-bar">
+      <img src="imagens/logo.png" alt="Logo Caroneiro" class="logo" />
+      <h2 class="titulo">Criar Grupo</h2>
+      <!-- Botão de configurações -->
+      <button class="config-btn" onclick="irConfig()"></button>
+    </header>
+
+    <main class="conteudo">
+      <form id="formGrupo">
+        <label for="nomeGrupo">Nome do Grupo</label>
+        <input type="text" id="nomeGrupo" placeholder="Digite o nome do grupo" />
+
+        <div class="imagem-grupo">
+          <p>Imagem do Grupo</p>
+          <div class="imagem-preview" onclick="escolherImagem()">Toque para adicionar uma imagem ao grupo</div>
+          <button type="button" onclick="escolherImagem()">Escolher Imagem</button>
+        </div>
+
+        <div class="participantes">
+          <p>Participantes</p>
+          <button type="button" onclick="adicionarParticipante()">+ Adicionar Participantes</button>
+        </div>
+
+        <button type="submit" class="btn-criar">Criar Grupo</button>
+      </form>
+    </main>
+
+    <!-- Rodapé com navegação -->
+    <footer class="nav-bar">
+      <button class="nav-icon home" onclick="irViagens()"></button>
+      <button class="nav-icon busca" onclick="irViajantes()"></button>
+      <button class="nav-icon grupos ativo"></button>
+      <button class="nav-icon perfil" onclick="irPerfil()"></button>
+      <button class="nav-icon chat" onclick="irChat()"></button>
+      <button class="nav-icon config" onclick="irConfig()"></button>
+    </footer>
+
+    <script src="criarGrupo.js"></script>
+    <script src="navegacao.js"></script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caroneiro - Viajantes</title>
+  <link rel="stylesheet" href="viajantes.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="top-bar">
+      <img src="imagens/logo.png" alt="Logo Caroneiro" class="logo" />
+      <h2 class="titulo">Buscar</h2>
+      <!-- Botão de configurações -->
+      <button class="config-btn" onclick="irConfig()"></button>
+    </header>
+
+    <div class="busca">
+        <input type="text" placeholder="Procurar viajante..." />
+      </div>      
+
+    <main class="conteudo">
+      <div class="filtros">
+        <button onclick="filtrar('data')">Data ▼</button>
+        <button onclick="filtrar('quem')">Quem ▼</button>
+        <button onclick="filtrar('mais')">Mais filtros ▼</button>
+      </div>
+
+      <section class="lista-viajantes">
+        <h3>Viajantes</h3>
+
+        <div class="viajante">
+          <div class="avatar-mariana"></div>
+          <div class="info">
+            <h4>Mariana</h4>
+            <p>25 anos, de São Paulo</p>
+          </div>
+        </div>
+
+        <div class="viajante">
+          <div class="avatar-lucas"></div>
+          <div class="info">
+            <h4>Lucas</h4>
+            <p>30 anos, de Rio de Janeiro</p>
+          </div>
+        </div>
+
+        <div class="viajante">
+          <div class="avatar-sofia"></div>
+          <div class="info">
+            <h4>Sofia</h4>
+            <p>28 anos, de Belo Horizonte</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé com navegação -->
+    <footer class="nav-bar">
+      <button class="nav-icon home" onclick="irViagens()"></button>
+      <button class="nav-icon busca ativo"></button>
+      <button class="nav-icon grupos" onclick="irGrupos()"></button>
+      <button class="nav-icon perfil" onclick="irPerfil()"></button>
+      <button class="nav-icon chat" onclick="irChat()"></button>
+      <button class="nav-icon config" onclick="irConfig()"></button>
+    </footer>
+  </div>
+
+  <script src="viajantes.js"></script>
+  <script src="navegacao.js"></script>
+</body>
+</html>

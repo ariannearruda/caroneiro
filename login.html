@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caroneiro - Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="app-container">
+    <div class="banner">
+      <img src="imagens/bannerlogin.jpg" alt="Imagem de praia com rede e palmeiras" />
+    </div>
+
+    <div class="login-container">
+      <h1 class="titulo">Aplicativo de parceiros de viagens</h1>
+
+      <main>
+        <h2>Encontre seu pacote de viagens</h2>
+        <form id="loginForm">
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="password" name="senha" placeholder="Senha" required />
+          <div class="buttons">
+            <button type="submit" class="btn-login">Log In</button>
+            <button type="button" class="btn-signup" onclick="window.location.href='cadastro.html'">Sign Up</button>
+          </div>
+        </form>
+        <p class="terms">
+          Ao continuar, você concorda com nossos <a href="#">Termos de Serviço</a> e <a href="#">Política de Privacidade</a>.
+        </p>
+      </main>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+  <script src="navegacao.js"></script>
+</body>
+</html>

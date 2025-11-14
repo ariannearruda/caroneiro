@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caroneiro - Grupos</title>
+  <link rel="stylesheet" href="grupos.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="top-bar">
+      <img src="imagens/logo.png" alt="Logo Caroneiro" class="logo" />
+      <h2 class="titulo">Grupos</h2>
+      <!-- Botão para criar grupo -->
+      <button class="btn-criar-grupo" onclick="irCriarGrupo()"></button>
+    </header>
+
+    <main class="conteudo">
+      <h3 class="subtitulo">Seus grupos</h3>
+
+      <div class="grupo" onclick="abrirGrupo('Paris')">
+        <div class="imagem-grupo grupo-paris"></div>
+        <div class="info-grupo">
+          <h4>Grupo de Viagem para Paris</h4>
+          <p>Destino: Paris, 10/07/2024</p>
+        </div>
+      </div>
+
+      <div class="grupo" onclick="abrirGrupo('Rio de Janeiro')">
+        <div class="imagem-grupo grupo-rio"></div>
+        <div class="info-grupo">
+          <h4>Grupo de Viagem para o Rio</h4>
+          <p>Destino: Rio de Janeiro, 15/08/2024</p>
+        </div>
+      </div>
+
+      <div class="grupo" onclick="abrirGrupo('Tóquio')">
+        <div class="imagem-grupo grupo-toquio"></div>
+        <div class="info-grupo">
+          <h4>Grupo de Viagem para Tóquio</h4>
+          <p>Destino: Tóquio, 20/09/2024</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rodapé com navegação -->
+    <footer class="nav-bar">
+      <button class="nav-icon home" onclick="irViagens()"></button>
+      <button class="nav-icon busca" onclick="irViajantes()"></button>
+      <button class="nav-icon grupos ativo"></button>
+      <button class="nav-icon perfil" onclick="irPerfil()"></button>
+      <button class="nav-icon chat" onclick="irChat()"></button>
+      <button class="nav-icon config" onclick="irConfig()"></button>
+    </footer>
+
+    <script src="grupos.js"></script>
+    <script src="navegacao.js"></script>
+  </div>
+</body>
+</html>

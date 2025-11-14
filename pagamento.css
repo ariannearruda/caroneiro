@@ -1,0 +1,169 @@
+/* === Reset e estrutura geral === */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .app-container {
+    width: 100%;
+    max-width: 400px;
+    height: 720px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* === Topo === */
+  .top-bar {
+    padding: 15px 20px;
+    background-color: #dbe9f4;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .titulo {
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  /* === Conteúdo principal === */
+  .conteudo {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .secao {
+    margin-bottom: 30px;
+  }
+  
+  .secao h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  /* === Métodos de pagamento === */
+  .metodo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+  }
+  
+  .metodo.selecionado {
+    border-color: #4CAF50;
+    background-color: #e0f7e9;
+  }
+  
+  .icone-metodo {
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .paypal { background-image: url('imagens/iconePaypal.jpeg'); }
+  .cartao { background-image: url('imagens/iconeCartao.png'); }
+  .apple  { background-image: url('imagens/iconeApple.png'); }
+  .google { background-image: url('imagens/iconeGogle.png'); }
+  
+  /* === Desconto === */
+  .desconto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .icone-desconto {
+    width: 32px;
+    height: 32px;
+    background-image: url('imagens/iconeDesconto.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* === Botão pagar === */
+  .btn-pagar {
+    margin-top: 30px;
+    padding: 16px 24px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  
+  
+  /* === Navegação inferior === */
+  .nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ccc;
+  }
+  
+  .nav-icon {
+    width: 32px;
+    height: 32px;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  /* Ícones personalizados */
+  .home    { background-image: url('imagens/iconeHome.png'); }
+  .busca   { background-image: url('imagens/iconeBusca.jpeg'); }
+  .grupos  { background-image: url('imagens/iconeGrupos.png'); }
+  .perfil  { background-image: url('imagens/iconePerfil.png'); }
+  .chat    { background-image: url('imagens/iconeChat.png'); }
+
+  .nav-bar {
+  display: flex;
+  justify-content: space-around; /* distribui os botões igualmente */
+  align-items: center;
+}
+
+.nav-icon {
+  width: 40px;       /* largura fixa */
+  height: 40px;      /* altura fixa */
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;    /* impede de encolher até sumir */
+}
+
+  

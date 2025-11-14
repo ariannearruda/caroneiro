@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caroneiro - Configurações</title>
+  <link rel="stylesheet" href="configuraçoes.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="top-bar">
+      <h2 class="titulo">Configurações</h2>
+    </header>
+
+    <main class="conteudo">
+      <section class="secao">
+        <h3>Preferências</h3>
+
+        <div class="item-config">
+          <span>Notificações</span>
+          <button class="switch" onclick="alternarNotificacoes()"></button>
+        </div>
+
+        <div class="item-config">
+          <span>Idioma</span>
+          <span class="valor">Português</span>
+        </div>
+
+        <div class="item-config">
+          <span>Tema</span>
+          <button class="btn-tema" onclick="alternarTema()">
+            <span id="temaValor">Claro</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="secao">
+        <h3>Conta</h3>
+
+        <div class="item-config clique" onclick="gerenciarConta()">
+          <span>Gerenciar conta</span>
+          <div class="icone-seta"></div>
+        </div>
+
+        <div class="item-config clique" onclick="sairConta()">
+          <span>Sair</span>
+          <div class="icone-seta"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé com navegação -->
+    <footer class="nav-bar">
+      <button class="nav-icon home" onclick="irViagens()"></button>
+      <button class="nav-icon busca" onclick="irViajantes()"></button>
+      <button class="nav-icon grupos" onclick="irGrupos()"></button>
+      <button class="nav-icon perfil" onclick="irPerfil()"></button>
+      <button class="nav-icon chat" onclick="irChat()"></button>
+      <button class="nav-icon config ativo"></button>
+    </footer>
+
+    <script src="configuraçoes.js"></script>
+    <script src="navegacao.js"></script>
+  </div>
+</body>
+</html>

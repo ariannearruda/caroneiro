@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caroneiro - Chat</title>
+  <link rel="stylesheet" href="chat.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="top-bar">
+      <!-- Botão de voltar leva para grupos -->
+      <button class="btn-voltar" onclick="irGrupos()"></button>
+      <h2 class="titulo">Sofia</h2>
+      <div class="avatar-topo"></div>
+    </header>
+
+    <main class="chat-area">
+      <div class="mensagem recebida">
+        <div class="avatar-msg avatar-sofia"></div>
+        <div class="texto-msg">Oi, tudo bem? Já decidiu nosso destino?</div>
+      </div>
+
+      <div class="mensagem enviada">
+        <div class="avatar-msg avatar-carlos"></div>
+        <div class="texto-msg">Oi, estou pensando numa viagem pra Flórida!</div>
+      </div>
+
+      <div class="mensagem recebida">
+        <div class="avatar-msg avatar-sofia"></div>
+        <div class="texto-msg">Eu adorei a ideia!</div>
+      </div>
+
+      <div class="mensagem recebida">
+        <div class="avatar-msg avatar-sofia"></div>
+        <div class="texto-msg">Vou começar a pesquisar hotéis agora!</div>
+      </div>
+    </main>
+
+    <form class="campo-envio" id="formChat">
+      <input type="text" id="mensagemInput" placeholder="Digite sua mensagem..." />
+      <button type="submit" class="btn-enviar"></button>
+      <button type="button" class="btn-imagem" onclick="escolherImagem()"></button>
+    </form>
+
+    <!-- Rodapé com navegação -->
+    <footer class="nav-bar">
+      <button class="nav-icon home" onclick="irViagens()"></button>
+      <button class="nav-icon busca" onclick="irViajantes()"></button>
+      <button class="nav-icon grupos" onclick="irGrupos()"></button>
+      <button class="nav-icon perfil" onclick="irPerfil()"></button>
+      <button class="nav-icon chat ativo"></button>
+      <button class="nav-icon config" onclick="irConfig()"></button>
+    </footer>
+
+    <script src="chat.js"></script>
+    <script src="navegacao.js"></script>
+  </div>
+</body>
+</html>

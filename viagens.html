@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caroneiro - Viagens</title>
+  <link rel="stylesheet" href="viagens.css" />
+</head>
+<body>
+  <div class="app-container">
+     
+    <header class="top-bar">
+        <img src="imagens/logo.png" alt="Logo Caroneiro" class="logo" />
+        <h2 class="titulo">Viaje junto</h2>
+        <!-- Botão de configurações -->
+        <button class="config-btn" onclick="irConfig()"></button>
+      </header>
+      
+    <main class="conteudo">
+
+      <div class="busca">
+        <input type="text" placeholder="Para onde vamos?" />
+        <button></button>
+      </div>
+
+      <section class="destaques">
+        <h3>Destinos em destaque</h3>
+        <div class="cards">
+          <div class="card">
+            <img src="imagens/CordilheiraAndes.jpeg" alt="Cordilheira dos Andes" />
+            <h4>Cordilheira dos Andes</h4>
+            <p>Aventura nas montanhas</p>
+          </div>
+          <div class="card">
+            <img src="imagens/PraiaCopacabana.jpeg" alt="Praia de Copacabana" />
+            <h4>Praia de Copacabana</h4>
+            <p>Relaxamento na praia</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sugestoes">
+        <h3>Sugestões personalizadas</h3>
+        <div class="cards">
+          <div class="card">
+            <img src="imagens/Patagonia.jpeg" alt="Patagônia" />
+            <h4>Aventura na Patagônia</h4>
+            <p>Trilhas e paisagens deslumbrantes</p>
+          </div>
+          <div class="card">
+            <img src="imagens/Salvador.jpeg" alt="Salvador" />
+            <h4>Cultura em Salvador</h4>
+            <p>Música e história vibrantes</p>
+          </div>
+          <div class="card">
+            <img src="imagens/Bonito.jpeg" alt="Bonito" />
+            <h4>Natureza em Bonito</h4>
+            <p>Rios cristalinos e cachoeiras</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé com navegação -->
+    <footer class="nav-bar">
+      <button class="nav-icon home" onclick="irViagens()"></button>
+      <button class="nav-icon grupos" onclick="irGrupos()"></button>
+      <button class="nav-icon perfil" onclick="irPerfil()"></button>
+      <button class="nav-icon chat" onclick="irChat()"></button>
+      <button class="nav-icon config" onclick="irConfig()"></button>
+    </footer>
+  </div>
+
+  <script src="viagens.js"></script>
+  <script src="navegacao.js"></script>
+</body>
+</html>

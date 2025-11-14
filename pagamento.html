@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caroneiro - Pagamento</title>
+  <link rel="stylesheet" href="pagamento.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="top-bar">
+      <h2 class="titulo">Pagamento</h2>
+    </header>
+
+    <main class="conteudo">
+      <section class="secao">
+        <h3>Escolha um método de pagamento</h3>
+
+        <div class="metodo" onclick="selecionarMetodo('paypal')">
+          <div class="icone-metodo paypal"></div>
+          <span>PayPal</span>
+        </div>
+
+        <div class="metodo" onclick="selecionarMetodo('cartao')">
+          <div class="icone-metodo cartao"></div>
+          <span>Cartão de crédito</span>
+        </div>
+
+        <div class="metodo" onclick="selecionarMetodo('apple')">
+          <div class="icone-metodo apple"></div>
+          <span>Apple Pay</span>
+        </div>
+
+        <div class="metodo" onclick="selecionarMetodo('google')">
+          <div class="icone-metodo google"></div>
+          <span>Google Pay</span>
+        </div>
+      </section>
+
+      <section class="secao">
+        <h3>Descontos</h3>
+        <div class="desconto" onclick="inserirCodigoDesconto()">
+          <div class="icone-desconto"></div>
+          <span>Código de desconto</span>
+        </div>
+      </section>
+
+      <button class="btn-pagar" onclick="confirmarPagamento()">Pagar</button>
+    </main>
+
+    <!-- Rodapé com navegação -->
+    <footer class="nav-bar">
+      <button class="nav-icon home" onclick="irViagens()"></button>
+      <button class="nav-icon busca" onclick="irViajantes()"></button>
+      <button class="nav-icon grupos" onclick="irGrupos()"></button>
+      <button class="nav-icon perfil" onclick="irPerfil()"></button>
+      <button class="nav-icon chat" onclick="irChat()"></button>
+      <button class="nav-icon config" onclick="irConfig()"></button>
+    </footer>
+
+    <script src="pagamento.js"></script>
+    <script src="navegacao.js"></script>
+  </div>
+</body>
+</html>

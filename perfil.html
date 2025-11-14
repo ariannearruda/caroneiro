@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caroneiro - Perfil</title>
+  <link rel="stylesheet" href="perfil.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="top-bar">
+      <img src="imagens/logo.png" alt="Logo Caroneiro" class="logo" />
+      <h2 class="titulo">Perfil</h2>
+      <!-- Botão de configurações -->
+      <button class="config-btn" onclick="irConfig()"></button>
+    </header>
+
+    <main class="conteudo">
+      <section class="perfil-info">
+        <div class="avatar"></div>
+        <h3 class="nome">Daniel Souza</h3>
+        <p class="descricao">Viajante • Membro desde 2022</p>
+
+        <div class="estatisticas">
+          <div><strong>12</strong><span>Viagens</span></div>
+          <div><strong>4.8</strong><span>Avaliação</span></div>
+          <div><strong>25</strong><span>Amigos</span></div>
+        </div>
+      </section>
+
+      <section class="preferencias">
+        <h3>Preferências de Viagem</h3>
+        <ul>
+          <li><strong>Destinos:</strong> Praias, Montanhas e Florestas</li>
+          <li><strong>Estilo de Viagem:</strong> Aventura, Natureza</li>
+          <li><strong>Interesses:</strong> Fotografia, Gastronomia</li>
+        </ul>
+      </section>
+
+      <section class="avaliacoes">
+        <h3>Avaliações</h3>
+        <div class="media-avaliacao">⭐ 4.8 (15 avaliações)</div>
+        <ul class="grafico-avaliacoes">
+          <li>⭐ 5 estrelas — 50%</li>
+          <li>⭐ 4 estrelas — 30%</li>
+          <li>⭐ 3 estrelas — 10%</li>
+          <li>⭐ 2 estrelas — 5%</li>
+          <li>⭐ 1 estrela — 5%</li>
+        </ul>
+
+        <div class="comentarios">
+            <div class="comentario">
+              <div class="avatar-carlos"></div>
+              <div class="texto-comentario">
+                <p><strong>Carlos Silva</strong> (2 meses atrás)</p>
+                <p>Daniel é uma ótima companhia de viagem! Super organizado e divertido.</p>
+              </div>
+            </div>
+          
+            <div class="comentario">
+              <div class="avatar-ana"></div>
+              <div class="texto-comentario">
+                <p><strong>Ana Pereira</strong> (6 meses atrás)</p>
+                <p>Gostei muito de viajar com o Daniel, mas poderíamos ter explorado mais a cultura local.</p>
+              </div>
+            </div>
+          </div>
+          
+      </section>
+    </main>
+
+    <!-- Rodapé com navegação -->
+    <footer class="nav-bar">
+      <button class="nav-icon home" onclick="irViagens()"></button>
+      <button class="nav-icon grupos" onclick="irGrupos()"></button>
+      <button class="nav-icon perfil ativo"></button>
+      <button class="nav-icon chat" onclick="irChat()"></button>
+      <button class="nav-icon config" onclick="irConfig()"></button>
+    </footer>
+  </div>
+
+  <script src="perfil.js"></script>
+  <script src="navegacao.js"></script>
+</body>
+</html>
